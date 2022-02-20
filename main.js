@@ -2,8 +2,8 @@ let board, cards, waiting;
 let pair = [];
 let solved = [];
 let images = [
-	"bird1", "bird2", "bird3", "cat", "crab", "eagle", "fish", "frog", "gorilla", "jelly", "owl", "snake",
-	"bird1", "bird2", "bird3", "cat", "crab", "eagle", "fish", "frog", "gorilla", "jelly", "owl", "snake"
+	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake",
+	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake"
 ]
 
 window.onload = function () {
