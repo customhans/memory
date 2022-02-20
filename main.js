@@ -1,5 +1,6 @@
 let board, cards, waiting;
 let pair = [];
+let solved = [];
 let images = [
 	"bird1", "bird2", "bird3", "cat", "crab", "eagle", "fish", "frog", "gorilla", "jelly", "owl", "snake",
 	"bird1", "bird2", "bird3", "cat", "crab", "eagle", "fish", "frog", "gorilla", "jelly", "owl", "snake"
@@ -12,7 +13,7 @@ window.onload = function () {
 }
 
 function shuffleImages() {
-	images = images.map(value => ({value, sort: Math.random()}))
+	images = images.map(value => ({ value, sort: Math.random()}))
 		.sort((a, b) => a.sort - b.sort)
 		.map(({value}) => value)
 }
@@ -26,13 +27,22 @@ function layCards() {
 }
 
 function toggle(s) {
+	startTimer();
+
 	if (waiting) return;
+
+	updateClicks();
+
 	cards[s].style.backgroundImage = "url(media/" + images[s] + ".jpg)";
 	pair.push([s, images[s]]);
 
 	if (pair.length < 2) return;
 
-	if (pair[0][1] == pair[1][1]) pair = [];
+	if (pair[0][1] == pair[1][1]) {
+		solved.push(pair); // later needed to check if all solved
+		if (solved.length === images.length / 2) gameSolved();
+		pair = [];
+	}
 
 	waiting = true; // prevent user from clicking 3rd or more cards
 
@@ -41,4 +51,9 @@ function toggle(s) {
 		pair = [];
 		waiting = false;
 	}, 1000);
+}
+
+function gameSolved() {
+	console.log("solved");
+	stopTimer();
 }

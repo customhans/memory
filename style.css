@@ -10,6 +10,20 @@ h1 {
 	text-align: center;
 }
 
+.timer {
+	font-size: 1.5em;
+	padding: 0 1em;
+}
+
+#time {
+	margin-bottom: 1em;
+}
+
+.timer p {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
 #board {
 	column-gap: 20px;
 	display: flex;
