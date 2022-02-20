@@ -34,12 +34,11 @@ function toggle(s) {
 
 	if (pair[0][1] == pair[1][1]) pair = [];
 
-	else {
-		waiting = true; // prevent user from clicking 3rd or more cards
-		setTimeout(function () {
-			for (let i in pair) cards[pair[i][0]].style = "";
-			pair = [];
-			waiting = false;
-		}, 1500);
-	}
+	waiting = true; // prevent user from clicking 3rd or more cards
+
+	setTimeout(function () {
+		for (let i in pair) cards[pair[i][0]].style = "";
+		pair = [];
+		waiting = false;
+	}, 1000);
 }
