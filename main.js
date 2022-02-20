@@ -38,7 +38,8 @@ function toggle(s) {
 
 	if (pair.length < 2) return;
 
-	if (pair[0][1] == pair[1][1]) {
+	if ( pair[0][0] !== pair[1][0] && // needed if user clicks on the same img twice
+			 pair[0][1] === pair[1][1] ) {
 		solved.push(pair); // later needed to check if all solved
 		if (solved.length === images.length / 2) gameSolved();
 		pair = [];
