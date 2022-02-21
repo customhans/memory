@@ -19,8 +19,8 @@ function shuffleImages() {
 
 function layCards() {
 	for (let i in images) {
-		board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>" + images[i] + "</button>"
-		//board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>"
+		//board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>" + images[i] + "</button>"
+		board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>"
 	}
 	cards = Array.from(document.querySelectorAll("#board > button"));
 }
