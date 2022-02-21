@@ -60,10 +60,15 @@ select {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	border: 1px solid;
-	height: 150px;
-	width: 150px;
+	border: 1px solid #eee;
 	font-size: 2em;
+	height: 150px;
+	transition: 0.25s border-color;
+	width: 150px;
+}
+
+#board button:hover {
+	border-color: black;
 }
 
 .show {
