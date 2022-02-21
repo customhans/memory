@@ -1,5 +1,5 @@
 # memory
 
-toDo: annoying timeout if user double clicks on same img
+Simple, no bs memory game.
 
-needs more options
+Have fun :)
