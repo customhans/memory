@@ -4,6 +4,7 @@ let images = [];
 
 window.onload = function () {
 	imageSet = "animals1"; // default
+	board = document.getElementById("board");
 	initGame();
 }
 
@@ -16,7 +17,6 @@ function gmSelect() {
 function initGame() {
 	clearAll();
 	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)"
-	board = document.getElementById("board");
 
 	images = [...window[imageSet], ...window[imageSet]]; // get images x 2 and convert string to variableName
 	shuffleImages();
