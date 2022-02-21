@@ -1,12 +1,11 @@
-let board, cards, waiting;
+let board, cards, waiting, imageSet;
 let pair = [];
 let solved = [];
-let images = [
-	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake",
-	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake"
-]
+let images = [];
 
 window.onload = function () {
+	imageSet = "animals1"; // default
+	images = [...window[imageSet]]; // get images and convert string to variableName
 	board = document.getElementById("board");
 	shuffleImages();
 	layCards();
@@ -20,8 +19,8 @@ function shuffleImages() {
 
 function layCards() {
 	for (let i in images) {
-		//board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>" + images[i] + "</button>"
-		board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>"
+		board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>" + images[i] + "</button>"
+		//board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>"
 	}
 	cards = Array.from(document.querySelectorAll("#board > button"));
 }
@@ -39,7 +38,7 @@ function toggle(s) {
 
 	updateClicks();
 
-	cards[s].style.backgroundImage = "url(media/" + images[s] + ".jpg)";
+	cards[s].style.backgroundImage = "url(media/" + imageSet + "/" + images[s] + ".jpg)";
 	pair.push([s, images[s]]);
 
 	if (pair.length < 2) return;

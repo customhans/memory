@@ -35,7 +35,8 @@ h1 {
 #board>button {
 	background-image: url(media/default.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
+    background-position: center center;
 	border: 1px solid;
 	height: 150px;
 	width: 150px;
