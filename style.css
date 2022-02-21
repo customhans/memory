@@ -18,6 +18,7 @@ h1 {
 nav {
 	align-items: center;
 	background-color: #4379b1;
+	background-image: url(./media/default.jpg);
 	color: #fff;
 	display: flex;
 	padding: 1em;
@@ -62,7 +63,7 @@ select {
 }
 
 #board > button {
-	background-image: url(./media/default.png);
+	background-image: url(./media/default.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
