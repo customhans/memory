@@ -8,11 +8,11 @@ window.onload = function () {
 }
 
 function initGame() {
+	clearAll();
 	images = [...window[imageSet], ...window[imageSet]]; // get images x 2 and convert string to variableName
 	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)"
 	board = document.getElementById("board");
 	shuffleImages();
-	clearAll();
 	layCards();
 }
 
