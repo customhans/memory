@@ -18,4 +18,9 @@ var reptiles = [
 	"cham1", "snake", "turtle", "basilisk", "iguana", "snake3", "turtle2", "cham2", "turtle3", "gecko", "snake2", "snake4"
 ]
 
+var cats = [
+	"blackcat", "lynx", "cat2", "cheetah", "feline", "leopard", "lion", "manul", "panther", "snowleopard", "sortalynx", "tiger",
+	"blackcat", "lynx", "cat2", "cheetah", "feline", "leopard", "lion", "manul", "panther", "snowleopard", "sortalynx", "tiger"
+]
+
 
