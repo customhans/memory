@@ -10,6 +10,7 @@ window.onload = function () {
 
 function initGame() {
 	images = [...window[imageSet]]; // get images and convert string to variableName
+	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)"
 	board = document.getElementById("board");
 	shuffleImages();
 	layCards();
