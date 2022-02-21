@@ -13,5 +13,7 @@ var reptiles = [
 var cats = [
 	"blackcat", "lynx", "cat2", "cheetah", "feline", "leopard", "lion", "manul", "panther", "snowleopard", "sortalynx", "tiger" ]
 
+var allRandom = []
+
 var random = []
 

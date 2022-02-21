@@ -1,5 +1,5 @@
 let board, cards, waiting, imageSet, pair, extraClicks;
-let solved = [];
+let solved;
 let images = [];
 
 window.onload = function () {
@@ -10,8 +10,18 @@ window.onload = function () {
 
 function gmSelect() {
 	let val = document.getElementById("gmSelect").value;
+	if (val === "random") fillRandoms();
 	imageSet = val;
 	initGame();
+}
+
+function fillRandoms() {
+	allRandom = [...animals1, ...mountains, ...fungi, ...reptiles, ...cats];
+	for (let i = 0; i < 12; i++) {
+		let randNr = Math.floor( Math.random() * allRandom.length);
+		random.push(allRandom[randNr]);
+		allRandom.splice(randNr, 1);
+	}
 }
 
 function initGame() {
@@ -89,4 +99,5 @@ function clearAll() {
 	clearClicks();
 	clearExtraClicks();
 	pair = [];
+	solved = [];
 }
