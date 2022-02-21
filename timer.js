@@ -55,10 +55,12 @@ function clearTimer() {
 }
 
 function clearClicks() {
+	clicks = 0;
 	appendClicks.innerHTML = "0";
 }
 
 function clearExtraClicks() {
+	extraClicks = 0;
 	appendExtraClicks.innerHTML = "";
 }
 
