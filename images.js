@@ -1,6 +1,6 @@
 var animals1 = [
-	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake",
-	"bird1", "beluga", "bird3", "cat", "crab", "eagle", "fish", "frog", "goat", "jelly", "owl", "snake"
+	"beluga", "bird1", "bird2", "cham", "crab", "doggoe", "flamingo", "freedom", "gato", "gorilla", "icebird", "owl",
+	"beluga", "bird1", "bird2", "cham", "crab", "doggoe", "flamingo", "freedom", "gato", "gorilla", "icebird", "owl"
 ]
 
 var mountains = [
