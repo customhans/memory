@@ -4,6 +4,7 @@ html {
 }
 
 body {
+	background-color: lightblue;
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: Arial, Helvetica, sans-serif;
@@ -63,10 +64,11 @@ select {
 }
 
 #board > button {
+	background-color: lightblue;
 	background-image: url(./media/default.jpg);
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
 	border: 1px solid #eee;
 	font-size: 2em;
 	height: 150px;
