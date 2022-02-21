@@ -13,3 +13,9 @@ var fungi = [
 	"birch", "boletus", "fancyone", "fly1", "fly2", "hat", "leetle1", "leetle2", "marone", "morel", "stone", "tintling"
 ]
 
+var reptiles = [
+	"cham1", "snake", "turtle", "basilisk", "iguana", "snake3", "turtle2", "cham2", "turtle3", "gecko", "snake2", "snake4",
+	"cham1", "snake", "turtle", "basilisk", "iguana", "snake3", "turtle2", "cham2", "turtle3", "gecko", "snake2", "snake4"
+]
+
+
