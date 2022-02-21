@@ -5,10 +5,20 @@ let images = [];
 
 window.onload = function () {
 	imageSet = "animals1"; // default
+	initGame();
+}
+
+function initGame() {
 	images = [...window[imageSet]]; // get images and convert string to variableName
 	board = document.getElementById("board");
 	shuffleImages();
 	layCards();
+}
+
+function gmSelect() {
+	let val = document.getElementById("gmSelect").value;
+	imageSet = val;
+	initGame();
 }
 
 function shuffleImages() {
@@ -18,6 +28,7 @@ function shuffleImages() {
 }
 
 function layCards() {
+	board.innerHTML = "";
 	for (let i in images) {
 		//board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>" + images[i] + "</button>"
 		board.innerHTML += "<button onclick='toggle(this.id)' id='" + i + "'>"

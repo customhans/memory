@@ -6,8 +6,12 @@ body {
 
 h1 {
 	flex-basis: 100%;
-	margin-bottom: 1em;
+	margin-bottom: 0;
 	text-align: center;
+}
+
+select {
+	margin: 1em 0;
 }
 
 .timer {
