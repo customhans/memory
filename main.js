@@ -1,5 +1,4 @@
-let board, cards, waiting, imageSet;
-let pair = [];
+let board, cards, waiting, imageSet, pair;
 let solved = [];
 let images = [];
 
@@ -13,7 +12,12 @@ function initGame() {
 	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)"
 	board = document.getElementById("board");
 	shuffleImages();
+	resetPair();
 	layCards();
+}
+
+function resetPair() {
+	pair = [];
 }
 
 function gmSelect() {
@@ -61,14 +65,14 @@ function toggle(s) {
 				solved.push(pair); // later needed to check if all solved
 				if (solved.length === images.length / 2) gameSolved();
 
-				pair = [];
+				resetPair();
 			}
 
 	waiting = true; // prevent user from clicking 3rd or more cards
 
 	setTimeout(function () {
 		for (let i in pair) cards[pair[i][0]].style = "";
-		pair = [];
+		resetPair();
 		waiting = false;
 	}, 1000);
 }
