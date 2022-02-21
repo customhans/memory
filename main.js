@@ -16,8 +16,12 @@ function gmSelect() {
 
 function initGame() {
 	clearAll();
-	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)"
+	document.body.style.backgroundImage = "url(media/" + imageSet + "/" + imageSet + "_bg.jpg)";
 
+	getImages();
+}
+
+function getImages() {
 	images = [...window[imageSet], ...window[imageSet]]; // get images x 2 and convert string to variableName
 	shuffleImages();
 	layCards();
