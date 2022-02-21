@@ -5,6 +5,7 @@ let appendMinutes = document.getElementById("minutes");
 let appendSeconds = document.getElementById("seconds");
 let Interval;
 let appendClicks = document.getElementById("clicks");
+let appendExtraClicks = document.getElementById("extraClicks");
 let clicks = 0;
 
 function startTimer() {
@@ -37,13 +38,27 @@ function stopTimer() {
 	clearInterval(Interval);
 }
 
+function updateClicks() {
+	clicks++;
+	appendClicks.innerHTML = clicks;
+}
+
+function updateExtraClicks() {
+	extraClicks = clicks - images.length;
+	appendExtraClicks.innerHTML = "(+" + extraClicks + ")";
+}
+
 function clearTimer() {
 	tens = seconds = minutes = 0;
 	appendSeconds.innerHTML = "00";
 	appendMinutes.innerHTML = "00";
 }
 
-function updateClicks() {
-	clicks++;
-	appendClicks.innerHTML = clicks;
+function clearClicks() {
+	appendClicks.innerHTML = "0";
 }
+
+function clearExtraClicks() {
+	appendExtraClicks.innerHTML = "";
+}
+
