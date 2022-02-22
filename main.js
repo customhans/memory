@@ -16,7 +16,7 @@ function gmSelect() {
 }
 
 function fillRandoms() {
-	allRandom = [...animals1, ...mountains, ...fungi, ...reptiles, ...cats, ...nudibranchs];
+	allRandom = [...animals1, ...mountains, ...fungi, ...reptiles, ...cats, ...nudibranchs, ...reef];
 	for (let i = 0; i < 12; i++) {
 		let randNr = Math.floor( Math.random() * allRandom.length);
 		random.push(allRandom[randNr]);

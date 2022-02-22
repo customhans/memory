@@ -10,6 +10,8 @@ var cats = [ "blackcat", "lynx", "cat2", "cheetah", "feline", "leopard", "lion",
 
 var nudibranchs = [ "nudi1", "nudi2", "nudi3", "nudi4", "nudi5", "nudi6", "nudi7", "nudi8", "nudi9", "nudi10", "nudi11", "nudi12" ]
 
+var reef = [ "barra", "blowfish", "clown", "eel", "jelly", "lionfish", "octopus", "ray", "seaturtle", "shrimp", "trumpetfish", "yellowfish" ]
+
 var allRandom = []
 
 var random = []
