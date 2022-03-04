@@ -1,5 +1,5 @@
 # memory
 
-Simple, no bs memory game.
+Simple memory game.
 
 Have fun :)
